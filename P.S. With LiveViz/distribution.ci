@@ -1,0 +1,21 @@
+mainmodule distribution
+{
+	readonly CProxy_Main mainProxy;	
+	
+	mainchare Main
+	{
+		entry Main(CkArgMsg *m);
+		entry void CheckIn(int);
+		entry void StartStep();
+	};
+		
+	array [2D] Points
+	{
+		entry Points();
+		entry void AssignPoints(double valuesListX[total],double valuesListY[total],int total);
+		entry void ShiftPoints();		
+		entry void Ghost(double tmpBufX[pointsReceived],double tmpBufY[pointsReceived],int pointsReceived);
+		entry void LiveVizFuncParticle(liveVizRequestMsg* msg);
+		entry void LiveVizFuncDensity(liveVizRequestMsg* msg);
+	};
+};
