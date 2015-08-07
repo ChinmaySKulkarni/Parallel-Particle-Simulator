@@ -1,0 +1,27 @@
+GIven problem is:
+>
+>
+>
+> 1) Create the chare array(8x8).
+>
+> 2) Generate 10,000 random (x,y) points s.t. x and y lie b/w 0 and 1.
+>
+> 3) Send the points to their respective chare as was told.
+>
+> 4) Do a little shift in x and y coordinates by 1/100 size of box on
+> both sides randomly.
+>
+> 5) Assuming the chare array to be a torus, reassign the points.
+>
+> 6) Do this for 100 time steps.
+>
+>
+>
+> Show your ci files tomorrow before coding this up.
+>
+> This can be further analyzed using projections and liveviz later.
+>
+>
+>
+> Next meeting : Friday around 3 pm(?).
+>

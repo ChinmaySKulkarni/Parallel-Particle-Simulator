@@ -1,0 +1,18 @@
+mainmodule distribution
+{
+	readonly CProxy_main mainProxy;	
+
+	mainchare main
+	{
+		entry main(CkArgMsg *m);
+		entry void checkIn(int);
+	};
+		
+	array [2D] points
+	{
+		entry points();
+		entry void assignPoints(double valuesListX[total],double valuesListY[total],int total);
+		entry void shiftPoints();		
+		entry void Ghost(double tmpBufX[pointsReceived],double tmpBufY[pointsReceived],int pointsReceived);
+	};
+};
